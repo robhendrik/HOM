@@ -1,15 +1,17 @@
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch
 from pathlib import Path
-
-OUT_PNG = Path("HOM_figure2_two_histories_v2.png")
+import os
+os.chdir("HOM")
+print(os.getcwd())
+OUT_PNG = Path("HOM_figure2.png")
 
 BLUE = "#1f77b4"
 RED = "#d62728"
 BS_EDGE = "black"
 LW_BEAM = 3.0
 LW_BS = 1.8
-FS = 13
+FS = 25
 
 def draw_beamsplitter(ax, x0=0, y0=0, size=1.25):
     ax.add_patch(
@@ -83,7 +85,7 @@ def history_transmitted(ax):
         0, 2.10,
         "Amplitude  1/√2 × 1/√2 = 1/2",
         ha="center", va="bottom",
-        fontsize=FS
+        fontsize=FS-10
     )
 
 def history_reflected(ax):
@@ -110,7 +112,7 @@ def history_reflected(ax):
         0, 2.10,
         "Amplitude  1/√2 × (−1/√2) = −1/2",
         ha="center", va="bottom",
-        fontsize=FS
+        fontsize=FS-10
     )
 
 def style_ax(ax):
@@ -132,7 +134,7 @@ fig.text(
     "Equal outcomes, opposite amplitude, the contributions cancel",
     ha="center",
     va="bottom",
-    fontsize=15
+    fontsize=FS-5
 )
 
 plt.subplots_adjust(

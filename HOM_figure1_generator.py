@@ -1,15 +1,18 @@
 from pathlib import Path
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch
+import os
+os.chdir("HOM")
+print(os.getcwd())
 
-OUT_PNG = Path("HOM_figure1_beamsplitter_phase_v2.png")
+OUT_PNG = Path("HOM_figure1.png")
 
 BLUE = "#1f77b4"
 RED = "#d62728"
 BS_EDGE = "black"
 LW_BEAM = 3.2
 LW_BS = 1.8
-FS = 14
+FS = 25
 
 def draw_beamsplitter(ax, x0=0, y0=0, size=1.25):
     ax.add_patch(
@@ -52,24 +55,24 @@ def panel_blue(ax):
     s = 1.25
 
     # Input/transmitted beam continues through the square
-    beam_line(ax, -2.2, 0, 1.85, 0, BLUE)
-    output_arrow(ax, 1.85, 0, 2.2, 0, BLUE)
+    beam_line(ax, -1.2, 0, 1.85, 0, BLUE)
+    output_arrow(ax, 0.85, 0, 2.2, 0, BLUE)
 
     # Reflected output
-    beam_line(ax, 0, 0, 0, 1.75, BLUE)
-    output_arrow(ax, 0, 1.75, 0, 2.1, BLUE)
+    beam_line(ax, 1, 0, 1, 1.75, BLUE)
+    output_arrow(ax, 1, 1.75, 1, 2.1, BLUE)
 
-    draw_beamsplitter(ax, 0, 0, s)
+    draw_beamsplitter(ax, 1, 0, s)
 
-    ax.text(-2.25, 0.18, "1", fontsize=FS, ha="left", va="bottom", color=BLUE)
-    ax.text(1.20, 0.18, "1/√2", fontsize=FS, ha="center", va="bottom", color=BLUE)
-    ax.text(0.18, 1.45, "1/√2", fontsize=FS, ha="left", va="center", color=BLUE)
+    ax.text(-2.75, 0.18, "Amplitude = 1", fontsize=FS, ha="left", va="bottom", color=BLUE)
+    ax.text(2.20, 0.18, "1/√2", fontsize=FS, ha="center", va="bottom", color=BLUE)
+    ax.text(1.18, 1.45, "1/√2", fontsize=FS, ha="left", va="center", color=BLUE)
 
 def panel_red(ax):
     s = 1.25
 
     # Input/transmitted beam continues through the square
-    beam_line(ax, 0, -2.1, 0, 1.75, RED)
+    beam_line(ax, 0, -1.8, 0, 1.75, RED)
     output_arrow(ax, 0, 1.75, 0, 2.1, RED)
 
     # Reflected output, carrying the minus sign
@@ -78,9 +81,9 @@ def panel_red(ax):
 
     draw_beamsplitter(ax, 0, 0, s)
 
-    ax.text(0.18, -1.55, "1", fontsize=FS, ha="left", va="center", color=RED)
+    ax.text(-1.18, -2.35, "Amplitude = 1", fontsize=FS, ha="left", va="center", color=RED)
     ax.text(0.18, 1.45, "1/√2", fontsize=FS, ha="left", va="center", color=RED)
-    ax.text(1.25, 0.18, "−1/√2", fontsize=FS, ha="center", va="bottom", color=RED)
+    ax.text(1.35, 0.18, "−1/√2", fontsize=FS, ha="center", va="bottom", color=RED)
 
 def style_ax(ax):
     ax.set_xlim(-2.5, 2.5)

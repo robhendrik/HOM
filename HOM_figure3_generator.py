@@ -1,13 +1,15 @@
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, FancyArrowPatch, Rectangle
 from pathlib import Path
-
-OUT_PNG = Path("HOM_figure3_indistinguishable_bosons.png")
+import os
+os.chdir("HOM")
+print(os.getcwd())
+OUT_PNG = Path("HOM_figure3.png")
 
 BLUE = "#1f77b4"
 RED = "#d62728"
 EDGE = "black"
-FS = 14
+FS = 20
 
 def photon(ax, x, y, color=None, radius=0.18, label=None):
     face = "white" if color is None else color
@@ -49,7 +51,7 @@ ax.text(4.7, 2.55, "red, blue", ha="center", fontsize=FS)
 ax.text(3.35, 3.2, "+", ha="center", va="center", fontsize=26)
 
 arrow(ax, 5.75, 3.2, 7.05, 3.2)
-ax.text(6.4, 3.55, "remove temporary labels", ha="center", fontsize=FS-1)
+ax.text(6.4, 3.75, "remove temporary labels", ha="center", fontsize=FS-1)
 
 ax.text(8.6, 4.55, "Same physical state", ha="center", va="center", fontsize=FS+1)
 mode_box(ax, 8.6, 3.2)
@@ -63,7 +65,7 @@ ax.text(5.5, 1.35,
         ha="center", va="center", fontsize=FS+1)
 
 ax.text(5.5, 0.72,
-        "a† a† |0⟩ = √2 |2⟩",
+        r"$a^\dagger a^\dagger |0\rangle = \sqrt{2}\,|2\rangle$",
         ha="center", va="center", fontsize=18)
 
 plt.tight_layout()
