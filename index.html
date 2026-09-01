@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Article</title>
+  <title>article</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -174,16 +174,16 @@
 <body>
 <h1 id="the-quantum-effect-of-light-passing-through-a-window">The
 Quantum Effect of Light Passing Through a Window</h1>
-<p><em>What happens when we look at reflection from a window one photon
-at a time? Quantum interference, indistinguishability, and bosonic
-symmetry appear in an everyday piece of glass.</em> <img
-src="feature_image.png" alt="Feature" /> &gt; <strong>Image generated
-with PyVista by author.</strong></p>
 <h3
 id="at-light-levels-low-enough-to-count-single-photons-we-can-see-quantum-interference-on-everyday-windows.">At
 light levels low enough to count single photons, we can see quantum
 interference on everyday windows.</h3>
-<hr />
+<figure>
+<img src="feature_image.png" alt="Feature image" />
+<figcaption aria-hidden="true">Feature image</figcaption>
+</figure>
+<p><strong>Image generated with PyVista by author.</strong></p>
+<p><em>Alt text: A beamsplitter against a black background.</em></p>
 <p>We are used to light being partially reflected and partially
 transmitted by a glass window. Classically, we say that the light wave
 is split. But what happens at the photon level? Does every photon simply
@@ -211,32 +211,24 @@ wave. The probability of finding the photon in an output port is the
 square of the corresponding amplitude, and, just as for the classical
 wave, the reflected and transmitted amplitudes have a relative
 phase.</p>
-<p>At high light intensities we no longer detect the individual photons.
-The intensity of the beam is then simply split according to these
-probabilities. So, in this limit, we recover the familiar classical
-behaviour.</p>
+<p>At high light intensities, we no longer detect the individual
+photons. The intensity of the beam is then simply split according to
+these probabilities. So, in this limit, we recover the familiar
+classical behaviour.</p>
 <figure>
 <img src="HOM_figure1.png" alt="Figure 1" />
 <figcaption aria-hidden="true">Figure 1</figcaption>
 </figure>
-<blockquote>
-<p><strong>Figure 1. A photon entering either port of a 50/50
+<p><strong><em>Figure 1. A photon entering either port of a 50/50
 beamsplitter leaves in a superposition of the two outputs. Both
 possibilities have amplitude magnitude 1/√2, but reflection from one
 side introduces a minus sign. This relative phase will become important
-when two photons arrive together. Image by author.</strong></p>
-</blockquote>
-<blockquote>
+when two photons arrive together. Image by author.</em></strong></p>
 <p><em>Alt text: Two diagrams of a 50/50 beamsplitter. A blue photon
 entering from one input splits into reflected and transmitted amplitudes
 of 1/√2. A red photon entering from the other input also splits into two
 amplitudes, but its reflected output carries a minus sign,
 −1/√2.</em></p>
-</blockquote>
-<blockquote>
-<p><strong>The beamsplitter splits the photon wave function in equal
-parts.</strong></p>
-</blockquote>
 <hr />
 <h2 id="when-two-photons-meet">When Two Photons Meet</h2>
 <p>Does this mean that a beamsplitter simply generates a 50/50 detection
@@ -252,7 +244,7 @@ output port.</p>
 <p>If the photons carried labels, we could distinguish these two
 outcomes. But identical photons do not carry such labels. <em>Both
 transmitted</em> and <em>both reflected</em> are therefore two histories
-leading to exactly the same final state.</p>
+leading to the same final state.</p>
 <p>Quantum mechanics tells us to add the amplitudes of indistinguishable
 histories, rather than their probabilities. And in this addition we have
 to consider the relative phase.</p>
@@ -264,25 +256,22 @@ cancel exactly.</p>
 <p>So, the amplitude — and therefore the probability — of finding one
 photon in each output port is zero. This outcome simply does not
 occur.</p>
-<p><img src="HOM_figure2.png" alt="Figure_2" /> &gt; <strong>Figure 2.
-Two photons enter different sides of a 50/50 beamsplitter. The outcome
-where one photon leaves each output port can arise through two
-alternatives: both photons are transmitted or both are reflected. For
-indistinguishable photons these alternatives lead to the same final
-state, but their amplitudes have opposite phase and cancel. The
-one-photon-per-output result disappears. The only possible outcomes are
-those where both photons leave the beamsplitter through the same output
-port. Image by author.</strong></p>
-<blockquote>
+<figure>
+<img src="HOM_figure2.png" alt="Figure 2" />
+<figcaption aria-hidden="true">Figure 2</figcaption>
+</figure>
+<p><strong>Figure 2. Two photons enter different sides of a 50/50
+beamsplitter. The outcome where one photon leaves each output port can
+arise through two alternatives: both photons are transmitted, or both
+are reflected. For indistinguishable photons, these alternatives lead to
+the same final state, but their amplitudes have opposite phase and
+cancel. The one-photon-per-output result disappears. The only possible
+outcomes are those where both photons leave the beamsplitter through the
+same output port. Image by author.</strong></p>
 <p><em>Alt text: Two photons enter opposite sides of a 50/50
 beamsplitter. Two alternative histories leading to one photon at each
 output are shown: both transmitted and both reflected. Their amplitudes
 have opposite signs and cancel.</em></p>
-</blockquote>
-<blockquote>
-<p><strong>Quantum mechanics does not ask which indistinguishable
-history happened. It adds their amplitudes.</strong></p>
-</blockquote>
 <hr />
 <h2 id="when-the-histories-reinforce">When the Histories Reinforce</h2>
 <p>So, if two identical photons enter the two input ports of the
@@ -301,25 +290,26 @@ protons). Multiple bosons can occupy the same quantum state, while
 identical fermions cannot.</p>
 <p>When multiple identical photons occupy the same mode, there is an
 additional bosonic enhancement. For two photons, the amplitude acquires
-a factor √2 and therefore the probability acquires a factor 2.</p>
+a factor √2, and therefore the probability acquires a factor of 2.</p>
 <p>So our apparent 25% probability for both photons leaving through one
 particular output becomes 50%. With two possible output ports, the
 probabilities once again add up to 100%.</p>
-<p><img src="HOM_figure3.png" alt="Figure 3" /> &gt; <strong>Figure 3.
-Imagine temporarily labelling two photons blue and red. There appear to
-be two ways to create two photons in the same mode: blue then red, or
-red then blue. Once the labels are removed, however, these are not
-different physical outcomes. They describe the same state of two
-identical photons. For bosons the two assignments have the same sign,
-giving the characteristic √2 enhancement: a†a†|0⟩ = √2|2⟩. Image by
-author.</strong></p>
-<blockquote>
+<figure>
+<img src="HOM_figure3.png" alt="Figure 3" />
+<figcaption aria-hidden="true">Figure 3</figcaption>
+</figure>
+<p><strong>Figure 3. Imagine temporarily labelling two photons blue and
+red. There appear to be two ways to create two photons in the same mode:
+blue then red, or red then blue. Once the labels are removed, however,
+these are not different physical outcomes. They describe the same state
+of two identical photons. For bosons, the two assignments have the same
+sign, giving the characteristic √2 enhancement: a†a†|0⟩ = √2|2⟩. Image
+by author.</strong></p>
 <p><em>Alt text: Two diagrams show a blue and a red photon occupying the
 same mode in opposite assignments: blue-red and red-blue. When the
 temporary colours are removed, both assignments describe the same state
 of two identical photons. Their contributions reinforce, producing the
 bosonic factor square root of two.</em></p>
-</blockquote>
 <h2 id="where-does-2-come-from">Where Does √2 Come From?</h2>
 <p>In quantum mechanics, we describe light in terms of modes that can
 contain 0, 1, 2, … photons. We can add a photon to a mode using what is
@@ -329,14 +319,14 @@ called a <em>creation operator</em> (a†). Starting from the empty state
 <p>So, adding a second photon to a mode that already contains one photon
 does not give the same amplitude as adding the first photon to an empty
 mode. It comes with an additional factor √2, and adding the
-<em>n</em>-th photon will come with a factor √<em>n</em>.</p>
+<em>n</em>-th photon will come with a factor √n.</p>
 <p>But where does this factor come from?</p>
 <p>One way to understand it is to temporarily imagine that the photons
 carry labels. There are two ways to assign two labelled photons to the
 same final two-photon state: photon A followed by photon B, or photon B
 followed by photon A. Once the photons are identical, these are no
 longer different physical states. Their amplitudes add.</p>
-<p>For <em>n</em> identical photons there are <em>n!</em> such
+<p>For <em>n</em> identical photons, there are <em>n!</em> such
 permutations. The √(<em>n</em>!) in the amplitude accounts for these
 different permutations when we construct the normalized
 <em>n</em>-photon state.</p>
@@ -346,11 +336,11 @@ the same principle: alternative ways to build the same bosonic state
 reinforce each other.</p>
 <p>The deeper reason is the symmetry of identical particles. For bosons,
 the quantum state must be symmetric under exchange of two particles. For
-fermions it must be antisymmetric. That requirement is ultimately
+fermions, it must be antisymmetric. That requirement is ultimately
 responsible for the Pauli exclusion principle for fermions.</p>
 <blockquote>
-<p><strong>The same indistinguishability that destroys one amplitude can
-enhance another.</strong></p>
+<p><strong><em>The same indistinguishability that destroys one amplitude
+can enhance another.</em></strong></p>
 </blockquote>
 <hr />
 <h2 id="when-are-two-photons-really-identical">When Are Two Photons
@@ -367,7 +357,7 @@ them, the interference disappears.</p>
 with one photon in each output port. As soon as we can distinguish the
 two photons, we can also distinguish the two histories. <em>Both
 transmitted</em> and <em>both reflected</em> are no longer two ways of
-arriving at exactly the same quantum state.</p>
+arriving at the same quantum state.</p>
 <p>So, this triggers a question: can we experimentally vary how
 distinguishable two photons are and watch this quantum interference
 disappear?</p>
@@ -377,12 +367,12 @@ disappear?</p>
 Other</h2>
 <p>The idea is surprisingly simple. We send two photons towards opposite
 input ports of a 50/50 beamsplitter, but now we can slightly delay one
-of them. Behind the beamsplitter we place two detectors and count how
+of them. Behind the beamsplitter, we place two detectors and count how
 often they click together.</p>
 <p>If the photons arrive at very different times, they are
 distinguishable. There is no two-photon interference, and sometimes we
 detect one photon in each output.</p>
-<p>We now gradually reduce the delay. As the two photon wave packets
+<p>We now gradually reduce the delay. As the two-photon wave packets
 start to overlap, it becomes increasingly difficult to tell which photon
 was which. The two histories become indistinguishable and begin to
 interfere.</p>
@@ -391,25 +381,22 @@ reaches its minimum. For perfectly indistinguishable photons and an
 ideal 50/50 beamsplitter, it becomes zero.</p>
 <p>Plotting the coincidence rate against the relative delay gives the
 characteristic <strong>Hong–Ou–Mandel dip</strong>.</p>
-<p><img src="HOM_figure4.png" alt="Figure 4" /> &gt; <strong>Figure 4.
-Delaying one photon relative to the other changes how much their wave
-packets overlap. At large positive or negative delays, the photons
-arrive at different times and the probability of finding one photon in
-each output approaches 1/2. At zero delay the photons overlap, the two
-alternatives become indistinguishable, and this probability drops to
-zero. The Hong–Ou–Mandel dip therefore measures how indistinguishable
-the two photons are [1]. Image by author.</strong></p>
-<blockquote>
-<p><em>Alt text. Plot of the probability of finding one photon in each
+<figure>
+<img src="HOM_figure4.png" alt="Figure 4" />
+<figcaption aria-hidden="true">Figure 4</figcaption>
+</figure>
+<p><strong>Figure 4. Delaying one photon relative to the other changes
+how much their wave packets overlap. At large positive or negative
+delays, the photons arrive at different times and the probability of
+finding one photon in each output approaches 1/2. At zero delay the
+photons overlap, the two alternatives become indistinguishable, and this
+probability drops to zero. The Hong–Ou–Mandel dip therefore measures how
+indistinguishable the two photons are [1]. Image by author.</strong></p>
+<p><em>Alt text: Plot of the probability of finding one photon in each
 beamsplitter output versus relative arrival time. Wave-packet diagrams
 show photons arriving in opposite orders for negative and positive
 delays, and overlapping at zero delay. The probability falls from one
 half for separated photons to zero at maximum overlap.</em></p>
-</blockquote>
-<blockquote>
-<p><strong>The HOM dip lets us turn indistinguishability into something
-we can measure.</strong></p>
-</blockquote>
 <hr />
 <h2 id="time-is-only-one-possible-label">Time Is Only One Possible
 Label</h2>
@@ -423,8 +410,8 @@ property that contains information about which photon is which.</p>
 photons do not merely have to look identical to our detectors. Their
 complete quantum states must overlap.</p>
 <blockquote>
-<p><strong>Time, polarization, frequency, spatial mode — almost anything
-can become a label.</strong></p>
+<p><strong><em>Time, polarization, frequency, spatial mode — almost
+anything can become a label.</em></strong></p>
 </blockquote>
 <p>There is another subtle point. Nobody actually has to measure the
 polarization, frequency, or arrival time.</p>
@@ -433,10 +420,6 @@ distinguishable. We can no longer add their amplitudes as if they were
 the same history.</p>
 <p>So, choosing not to look at a label is not the same as removing the
 label.</p>
-<blockquote>
-<p><strong>It is not enough that we choose not to look. The alternatives
-must leave no physical information that distinguishes them.</strong></p>
-</blockquote>
 <hr />
 <h2 id="how-indistinguishable-is-indistinguishable">How
 Indistinguishable Is Indistinguishable?</h2>
@@ -450,8 +433,8 @@ shallower.</p>
 <p>So, the strange disappearance of one possible outcome becomes a
 practical measurement of photon indistinguishability.</p>
 <blockquote>
-<p><strong>The HOM dip measures how completely two quantum states
-overlap.</strong></p>
+<p><strong><em>The HOM dip measures how completely two quantum states
+overlap.</em></strong></p>
 </blockquote>
 <hr />
 <h2 id="why-do-photons-bunch">Why Do Photons Bunch?</h2>
@@ -466,9 +449,9 @@ two-photon outcomes. The amplitudes leading to one photon in each output
 cancel, while the amplitudes associated with two photons occupying the
 same output mode reinforce.</p>
 <blockquote>
-<p><strong>Bosonic bunching is not an attraction between photons. It is
-what remains after indistinguishable quantum amplitudes reinforce and
-cancel.</strong></p>
+<p><strong><em>Bosonic bunching is not an attraction between photons. It
+is what remains after indistinguishable quantum amplitudes reinforce and
+cancel.</em></strong></p>
 </blockquote>
 <hr />
 <h2 id="from-a-quantum-oddity-to-a-quantum-tool">From a Quantum Oddity
@@ -489,10 +472,6 @@ entanglement swapping and optical quantum computing.</p>
 <p>Interestingly enough, the effect that started with the disappearance
 of one possible detector outcome has become a way of processing quantum
 information.</p>
-<blockquote>
-<p><strong>The disappearance of photon identity becomes something we can
-engineer and use.</strong></p>
-</blockquote>
 <hr />
 <p>We started with something ordinary: light reflecting from a
 window.</p>
@@ -509,13 +488,13 @@ asking questions for which the classical description no longer contains
 enough information.</p>
 <p>And perhaps that is the most interesting part of the Hong–Ou–Mandel
 effect. Quantum mechanics does not only appear in exotic particles,
-giant accelerators or carefully isolated quantum computers. The basic
+giant accelerators, or carefully isolated quantum computers. The basic
 ingredient can be something as simple as two photons and a partially
 reflecting piece of glass.</p>
 <blockquote>
-<p><strong>Perhaps we see quantum mechanics every time we look through a
-window. We normally just send far too many photons through it to
-notice.</strong></p>
+<p><strong><em>Perhaps we see quantum mechanics every time we look
+through a window. We normally just send far too many photons through it
+to notice.</em></strong></p>
 </blockquote>
 <hr />
 <h2 id="reference">Reference</h2>
