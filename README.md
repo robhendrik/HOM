@@ -2,6 +2,8 @@
 
 > At light levels low enough to count single photons, we can see quantum interference on everyday windows.
 
+Read the ![article on The Armchair Quantum Physicist](https://armchairquantumphysicist.com/2026/10/13/your-window-has-been-doing-quantum-physics-all-along/)
+
 ![Feature image: a glass beamsplitter cube with red and blue beams on a black background](feature_image.png)
 
 This repository holds the article *The Quantum Effect of Light Passing Through a Window*, an introduction to the **Hong–Ou–Mandel (HOM) effect**, together with the Python scripts that generate every figure in it.
