@@ -1,4 +1,5 @@
-# The Quantum Effect of Light Passing Through a Window
+---
+# Your Window Has Been Doing Quantum Physics All Along
 
 ### At light levels low enough to count single photons, we can see quantum interference on everyday windows.
 
@@ -10,6 +11,8 @@
 
 We are used to light being partially reflected and partially transmitted by a glass window. Classically, we say that the light wave is split. But what happens at the photon level? Does every photon simply decide randomly whether to reflect or pass through?
 
+As we will see, something more interesting happens. For two photons, different histories can become indistinguishable and interfere with each other — suppressing some outcomes completely while enhancing others.
+
 ## Window as a Beamsplitter
 
 If a light beam splits at a glass interface into two equally strong parts, the amplitudes will be reduced by a factor √2. (Remember, the intensity is proportional to the square of the amplitude.)
@@ -17,6 +20,8 @@ If a light beam splits at a glass interface into two equally strong parts, the a
 But we should also consider the phase. A beamsplitter introduces a relative phase between reflection and transmission — but not the same phase everywhere. Reflecting off the front of the glass reflective surface flips the phase by 180°. Reflecting off the back does not. Transmission, in either direction, has no phase flip at all.
 
 This might sound like a technical detail, but it’s exactly what keeps energy conserved. Imagine two beamsplitters that first split a beam and then recombine it. If reflection worked the same way from both sides, the two recombined beams could each end up with the full intensity of the original — creating energy from nothing. The 180°/0° asymmetry between the two reflection directions is what prevents that.
+
+> That small phase difference will eventually make an apparently perfectly reasonable two-photon outcome disappear completely.
 
 ## What Does a Single Photon Do at a Window?
 
@@ -36,7 +41,7 @@ At high light intensities, we no longer detect the individual photons. The inten
 
 ## When Two Photons Meet
 
-Does this mean that a beamsplitter simply generates a 50/50 detection probability for any photon? It is more interesting than that.
+But what if two photons arrive at the same time? This is where the simple 50/50 picture starts to fail.
 
 Consider two photons entering the beamsplitter through different input ports. There are four possibilities. If the first photon is reflected and the second passes through, they both leave through one output port. If the first passes through and the second is reflected, they both leave through the other.
 
@@ -64,7 +69,7 @@ So, if two identical photons enter the two input ports of the beamsplitter, they
 
 But how does that work with the probabilities?
 
-For each individual photon, the probability of leaving through either port is 50%. We might therefore expect the probability of both photons leaving through one particular port to be 25%. There are two such ports, giving us only 50% in total. We seem to have lost half of the probability.
+For each photon, the probability of leaving through either port is 50%. We might therefore expect the probability of both photons leaving through one particular port to be 25%. There are two such ports, giving us only 50% in total. We seem to have lost half of the probability.
 
 The resolution lies in how we treat identical bosons in quantum mechanics. Particles fall into two broad classes: bosons (such as photons and the Higgs boson) and fermions (such as electrons and protons). Multiple bosons can occupy the same quantum state, while identical fermions cannot.
 
@@ -94,9 +99,9 @@ For *n* identical photons, there are *n!* such permutations. The √(*n*!) in th
 
 So, earlier we saw destructive interference between alternative ways to arrive at one photon in each output. Here we see the other side of the same principle: alternative ways to build the same bosonic state reinforce each other.
 
-The deeper reason is the symmetry of identical particles. For bosons, the quantum state must be symmetric under exchange of two particles. For fermions, it must be antisymmetric. That requirement is ultimately responsible for the Pauli exclusion principle for fermions.
-
 > ***The same indistinguishability that destroys one amplitude can enhance another.***
+
+The deeper reason is the symmetry of identical particles. For bosons, the quantum state must be symmetric under exchange of two particles. For fermions, it must be antisymmetric. That requirement is ultimately responsible for the Pauli exclusion principle for fermions.
 
 ---
 
@@ -134,7 +139,7 @@ Plotting the coincidence rate against the relative delay gives the characteristi
 
 ## Time Is Only One Possible Label
 
-Arrival time is not special. Suppose the photons arrive at exactly the same time, but one is horizontally polarized and the other vertically polarized. We can now distinguish them by polarization, and the HOM interference disappears.
+Arrival time is not special. Suppose the photons arrive at the same time, but one is horizontally polarized and the other vertically polarized. We can now distinguish them by polarization, and the HOM interference disappears.
 
 The same is true for frequency, spatial mode, or any other physical property that contains information about which photon is which.
 
@@ -198,8 +203,12 @@ And perhaps that is the most interesting part of the Hong–Ou–Mandel effect. 
 
 > ***Perhaps we see quantum mechanics every time we look through a window. We normally just send far too many photons through it to notice.***
 
+Thanks for reading. If you enjoyed this, follow me for more articles on quantum optics and the physics hiding in everyday things.
+
 ---
 
 ## Reference
 
 [1] C. K. Hong, Z. Y. Ou, and L. Mandel, “Measurement of subpicosecond time intervals between two photons by interference,” *Physical Review Letters* **59**, 2044–2046 (1987).
+---
+

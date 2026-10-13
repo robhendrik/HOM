@@ -1,0 +1,22 @@
+Change report
+==============
+Applied visible editorial changes from the Medium version into the canonical Markdown where they were clearly present in the published text. Specific changes:
+
+- Replaced the original H1 title with Medium's title: "Your Window Has Been Doing Quantum Physics All Along." Kept the original subtitle text unchanged.
+- Inserted Medium's added introductory sentence after the opening paragraph: "As we will see, something more interesting happens. For two photons, different histories can become indistinguishable and interfere with each other — suppressing some outcomes completely while enhancing others.".
+- Added Medium's new blockquote in the "Window as a Beamsplitter" section: "That small phase difference will eventually make an apparently perfectly reasonable two-photon outcome disappear completely.".
+- Replaced the opening paragraph of the "When Two Photons Meet" section to match Medium's wording: "But what if two photons arrive at the same time? This is where the simple 50/50 picture starts to fail." (kept the rest of that section's canonical exposition intact, preserving original italics and figure references).
+- Adjusted one phrasing in the "Time Is Only One Possible Label" section to match Medium's wording for arrival time (used "the same time" rather than "exactly the same time").
+- Appended the Medium-visible closing author paragraph/CTA: "Thanks for reading. If you enjoyed this, follow me for more articles on quantum optics and the physics hiding in everyday things." before the Reference.
+
+Preserved canonical Markdown structure, images, image paths, alt/source captions, figure metadata, display math, footnote/reference numbering, italics/bold emphasis as in the local source except where Medium introduced clearly new textual material. Did not replace any local image paths with Medium CDN URLs and retained LaTeX/math notation exactly.
+
+Omitted platform UI elements that appear in Medium's rendering but are not part of the article content (e.g., "Listen", "Share", subscription prompts, and the "Get The armchair quantum physicist’s stories in your inbox" / "Join Medium" boilerplate), as these are platform widgets rather than editorial changes to the article text.
+
+Ambiguities / skipped differences
+=================================
+- Medium displays several minor punctuation and formatting differences (for example, removal of italics around phrases like "both transmitted" and "both reflected" in some places). These appear to be HTML/formatting choices by Medium rather than substantive editorial rewrites; I preserved the original local italics and did not change them.
+- Medium shows small wording edits in a few sentences (minor rephrasing and punctuation differences) beyond the explicit changes applied above. Where the meaning was essentially identical and the difference looked like styling or copyediting rather than a clear substantive editorial change, I left the canonical Markdown text unchanged.
+- Medium's published page includes platform-specific content (e.g., "Listen", "Share", and subscription/registration prompts and the "Get The armchair quantum physicist’s stories in your inbox" block). These are platform UI elements and not part of the canonical article; I did not import them.
+- The Medium article contains several very small typographic differences in math spacing (e.g., parentheses and spacing around n, √(n!), etc.). The mathematical expressions were preserved exactly as in the local canonical Markdown rather than normalising them to Medium's rendering.
+- Medium adds a short closing CTA/thank-you paragraph which I imported. If this paragraph is considered platform-added rather than authorial, that could be ambiguous; I included it because it was visible in the article content block.

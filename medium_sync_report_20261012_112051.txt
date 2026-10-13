@@ -1,0 +1,12 @@
+Change report
+==============
+Applied two visible editorial wording changes from the Medium text into the canonical Markdown: (1) added the word "of" in the sentence "reduced by a factor of √2." (2) inserted an Oxford comma in the list "entanglement swapping, and optical quantum computing." All other content, formatting, images, math, captions, references, and structure were left as in the local canonical Markdown. UI/formatting differences present in the Medium rendering were not incorporated.
+
+Ambiguities / skipped differences
+=================================
+- Heading levels: Medium shows many section headings as h3/h2 in its HTML extraction whereas the local Markdown uses different heading levels (##). This appears to be formatting/rendering on Medium; I preserved the canonical Markdown headings.
+- Italics/strong formatting: Several phrases that appear unstyled in the Medium extraction are italicized or bold in the local Markdown (for example, *Both transmitted*, blockquoted emphasis). These appear to be rendering differences; I preserved the local Markdown formatting.
+- Figure alt text: The local Markdown includes explicit alt text for images (e.g. "A beamsplitter against a black background.") that does not appear in the Medium extraction. I preserved the local alt text because Medium's extraction omits alt metadata.
+- Subscription/UX content: The Medium extraction includes a subscription CTA and sign-in lines ("Get The armchair quantum physicist’s stories in your inbox", "Join Medium for free", etc.). These are UI elements, not article editorial content; they were not imported.
+- Minor spacing and punctuation in equations and inline math in the Medium extraction (e.g. extra spaces around n or punctuation) appear to be rendering artifacts; I preserved the canonical Markdown math and punctuation.
+- Small stylistic differences in Medium (such as removal of bold or italic styling in some places, or an extra space before a period) are treated as rendering differences and were not adopted.
